@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+    <div class="item">
+        
+        <a href="grab1." style="text-decoration: none;">Grab Bestselling Books upto 50% Off!</a>
+        
+        
+
+    </div><br>
+    <div class="logo">
+        <img src="C:/Users/sriram.B/Downloads/books2/loh.png">
+    
+    <div class="search">
+        <input type="search"placeholder="  Search By Title,Author,Publisher Or ISBN">
+        <div class="icon"> 
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    </div>
+    <div class="account">
+        <img src="C:/Users/sriram.B/Downloads/log.svg">
+        <p>My Account</p>
+        <span>|</span>
+        <img src="C:/Users/sriram.B/Downloads/cart.svg">
+        <label>0</label>
+        </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Book ▼</a>
+                </li>
+              
+                
+                <li class="nav-item"><a href="#" class="nav-link">New Arrivals</a></li>
+                
+                <li class="nav-item"><a href="#" class="nav-link">Box Sets</a>     </li>
+                <li class="nav-item"><a href="#" class="nav-link">Best Sellers</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Fiction Books</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Award Winners</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Featured Authors</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Today's Deal</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Request a Book</a></li>
+                
+                
+            </ul>
+            <img src="C:/Users/sriram.B/Downloads/heart.svg">
+            <fig>0</fig>
+            
+        </nav>
+        <hr style="height: 0.5px; background-color: #e42b26;;;; border: none;">
+        <!-- <div class="j">
+            <h1>Fiction Books</h1>
+        </div> -->
+        <div class="sar">
+            
+            <img src="C:/Users/sriram.B/Downloads/books2/cur.jpg">
+
+        </div>
+<div class="carousel">
+    <div class="carousel-images">
+        <img src="C:/Users/sriram.B/Downloads/books2/14_inr.jpg">
+        <img src="C:/Users/sriram.B/Downloads/books2/15_inr.jpg">
+        <img src="C:/Users/sriram.B/Downloads/books2/16_inr.jpg">
+        <img src="C:/Users/sriram.B/Downloads/books2/17_inr.jpg">
+        <img src="C:/Users/sriram.B/Downloads/books2/18_inr.jpg">
+        <img src="C:/Users/sriram.B/Downloads/books2/19_inr.jpg">
+
+
+
+
+
+    </div>
+    <button class="carousel-button left">&#10094;</button>
+    <button class="carousel-button right">&#10095;</button>
+
+</div>
+<script>
+    const carouselImages= document.querySelector('.carousel-images');
+    const images= document.querySelectorAll('.carousel-images img');
+ 
+    
+    const prevButton= document.querySelector('.carousel-button.left');
+    const nextButton= document.querySelector('.carousel-button.right');
+
+    let currentIndex = 0;
+
+    
+
+  
+    function updateCarousel() {
+        
+        const offset = -currentIndex * 100;
+        carouselImages.style.transform = `translateX(${offset}%)`;
+        carouselImages.style.transition = 'transform 0.2s ease-out';
+    }
+
+    
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 :images.length -1;
+        updateCarousel();
+    });
+
+    
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex <images.length - 1) ? currentIndex + 1:0;
+        updateCarousel();
+    });
+
+    
+   setInterval(() => {
+       nextButton.click();
+    }, 9000); 
+
+    
+
+    
+</script><br><br>
+<div class="hy">
+    <h3>books</h3>
+</div>
